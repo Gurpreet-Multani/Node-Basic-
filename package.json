@@ -1,0 +1,24 @@
+{
+  "name": "basicinfo-odinproject",
+  "version": "1.0.0",
+  "description": "Practice Project for Node and is the 1st Odin Project where this project is based on just a basic informational site using the basics",
+  "license": "ISC",
+  "author": "Gurpreet Multani",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [],
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

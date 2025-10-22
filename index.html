@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Basic Node.js Site</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a> | <a href="/about">About</a> |
+        <a href="/contact-me">Contact Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Welcome to the Basic Node.js HTTP Server!</h1>
+      <p>
+        This is the main landing page, served directly from the `index.html`
+        file when a user navigates to the root path ( `/` ).
+      </p>
+
+      <h2>How This Works:</h2>
+      <p>
+        Your server uses Node.js and the `http` and `fs` modules to perform
+        **static file serving** and **basic routing**.
+      </p>
+
+      <ol>
+        <li>The browser requests the path **`/`**.</li>
+        <li>Your `http.createServer` function sees `req.url === "/"`.</li>
+        <li>It calls `HandleFiles("index.html", 200, res)`.</li>
+        <li>
+          The `fs.readFile` function loads this HTML file and sends it to the
+          browser with an **HTTP 200 OK** status.
+        </li>
+      </ol>
+
+      <p>Use the links in the header to navigate to other pages!</p>
+    </main>
+
+    <footer>
+      <hr />
+      <p>Server-side powered by Node.js.</p>
+    </footer>
+  </body>
+</html>

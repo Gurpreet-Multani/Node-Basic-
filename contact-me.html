@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a> | <a href="/about">About</a> |
+        <a href="/contact-me">Contact Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Contact Information</h1>
+      <p>Feel free to reach out through one of the following methods:</p>
+
+      <address>
+        Email: <a href="mailto:example@website.com">example@website.com</a
+        ><br />
+        Phone: (555) 123-4567<br />
+      </address>
+
+      <h2>Send a Quick Message (HTML Form)</h2>
+      <form action="/submit-contact" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" cols="50"></textarea
+        ><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Basic Info Site</p>
+      <p>Keep in mind Submit Button is not Functional Yet</p>
+    </footer>
+  </body>
+</html>
